@@ -1,6 +1,6 @@
 # LigaBetPlay - **Java**
 
-<center>![logo](https://github.com/Maricifu/BetPlayLeague_JAVA/blob/main/src/main/resources/java.svg "JAVA")</center>
+![logo](https://github.com/Maricifu/BetPlayLeague_JAVA/blob/main/src/main/resources/java.svg "JAVA")
 
 
 
