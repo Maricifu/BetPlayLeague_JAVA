@@ -12,14 +12,14 @@ public class Partido {
     private String estadio;
     private List<Goles> goles;
     private List<Tarjeta> listatarjetas;
-    private List<String> incidentes;
-    private String resultado;
+    private List<Incidente> incidentes;
+    private Resultado resultado;
 
     public Partido() {
     }
 
     public Partido(int id, String equipolocal, String equipovisitante, Date fecha, String hora, String estadio,
-            List<Goles> goles, List<Tarjeta> listatarjetas, List<String> incidentes, String resultado) {
+            List<Goles> goles, List<Tarjeta> listatarjetas, List<Incidente> incidentes, Resultado resultado) {
         this.id = id;
         this.equipolocal = equipolocal;
         this.equipovisitante = equipovisitante;
@@ -96,19 +96,19 @@ public class Partido {
         this.listatarjetas = listatarjetas;
     }
 
-    public List<String> getIncidentes() {
+    public List<Incidente> getIncidentes() {
         return incidentes;
     }
 
-    public void setIncidentes(List<String> incidentes) {
+    public void setIncidentes(List<Incidente> incidentes) {
         this.incidentes = incidentes;
     }
 
-    public String getResultado() {
+    public Resultado getResultado() {
         return resultado;
     }
 
-    public void setResultado(String resultado) {
+    public void setResultado(Resultado resultado) {
         this.resultado = resultado;
     }
     

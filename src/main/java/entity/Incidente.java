@@ -1,18 +1,16 @@
 package entity;
 
-public class Tarjeta {
+public class Incidente {
     private int id;
-    private int idjugador;
     private int idpartido;
-    private String tipo;
+    private String descripcion;
     private String minuto;
-    public Tarjeta() {
+    public Incidente() {
     }
-    public Tarjeta(int id, int idjugador, int idpartido, String tipo, String minuto) {
+    public Incidente(int id, int idpartido, String descripcion, String minuto) {
         this.id = id;
-        this.idjugador = idjugador;
         this.idpartido = idpartido;
-        this.tipo = tipo;
+        this.descripcion = descripcion;
         this.minuto = minuto;
     }
     public int getId() {
@@ -21,23 +19,17 @@ public class Tarjeta {
     public void setId(int id) {
         this.id = id;
     }
-    public int getIdjugador() {
-        return idjugador;
-    }
-    public void setIdjugador(int idjugador) {
-        this.idjugador = idjugador;
-    }
     public int getIdpartido() {
         return idpartido;
     }
     public void setIdpartido(int idpartido) {
         this.idpartido = idpartido;
     }
-    public String getTipo() {
-        return tipo;
+    public String getDescripcion() {
+        return descripcion;
     }
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
     public String getMinuto() {
         return minuto;
@@ -46,5 +38,4 @@ public class Tarjeta {
         this.minuto = minuto;
     }
 
-    
-}
+    }
