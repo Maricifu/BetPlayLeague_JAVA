@@ -17,46 +17,30 @@ ligabetplay
 │   │   │   └── com
 │   │   │       └── betplay
 │   │   │           ├── Main.java
-│   │   │           ├── controller
-│   │   │           │   ├── EquipoController.java
-│   │   │           │   ├── JugadorController.java
-│   │   │           │   ├── PartidoController.java
-│   │   │           │   ├── GolController.java
-│   │   │           │   ├── TarjetaController.java
-│   │   │           │   ├── IncidenteController.java
-│   │   │           │   ├── ResultadoController.java
-│   │   │           │   ├── LesionController.java
-│   │   │           │   ├── RendimientoController.java
-│   │   │           │   ├── EntrenamientoController.java
-│   │   │           │   ├── ActividadController.java
-│   │   │           │   ├── TransferenciaController.java
-│   │   │           │   ├── UsuarioController.java
-│   │   │           │   ├── RolController.java
-│   │   │           │   ├── PermisoController.java
-│   │   │           │   ├── PatrocinadorController.java
-│   │   │           │   ├── ComunicacionController.java
-│   │   │           │   ├── EntradaController.java
-│   │   │           │   └── EstadioController.java
-│   │   │           ├── entity
-│   │   │           │   ├── Equipo.java
-│   │   │           │   ├── Jugador.java
-│   │   │           │   ├── Partido.java
-│   │   │           │   ├── Gol.java
-│   │   │           │   ├── Tarjeta.java
-│   │   │           │   ├── Incidente.java
-│   │   │           │   ├── Resultado.java
-│   │   │           │   ├── Lesion.java
-│   │   │           │   ├── Rendimiento.java
-│   │   │           │   ├── Entrenamiento.java
-│   │   │           │   ├── Actividad.java
-│   │   │           │   ├── Transferencia.java
-│   │   │           │   ├── Usuario.java
-│   │   │           │   ├── Rol.java
-│   │   │           │   ├── Permiso.java
-│   │   │           │   ├── Patrocinador.java
-│   │   │           │   ├── Comunicacion.java
-│   │   │           │   ├── Entrada.java
-│   │   │           │   └── Estadio.java
+│   │   │           ├── controller.java
+│   │   │           ├── model
+│   │   │           │   └── entity
+│   │   │           │       ├── Equipo.java
+│   │   │           │       ├── Jugador.java
+│   │   │           │       ├── Partido.java
+│   │   │           │       ├── Goles.java
+│   │   │           │       ├── Tarjeta.java
+│   │   │           │       ├── Incidente.java
+│   │   │           │       ├── Resultado.java
+│   │   │           │       ├── Lesion.java
+│   │   │           │       ├── Rendimiento.java
+│   │   │           │       ├── Entrenamiento.java
+│   │   │           │       ├── Actividad.java
+│   │   │           │       ├── Transferencia.java
+│   │   │           │       ├── Usuario.java
+│   │   │           │       ├── Rol.java
+│   │   │           │       ├── Permiso.java
+│   │   │           │       ├── Patrocinador.java
+│   │   │           │       ├── Comunicacion.java
+│   │   │           │       ├── Persona.java
+│   │   │           │       ├── Entrada.java
+│   │   │           │       └── Estadio.java
+│   │   │           │
 │   │   │           └── view
 │   │   │               ├── EquipoView.java
 │   │   │               ├── JugadorView.java
