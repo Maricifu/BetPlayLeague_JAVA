@@ -18,9 +18,5 @@ public class Usuario {
     }
 
     
-//     id : Identificador único del usuario.
-// nombre : Nombre del usuario.
-// email : Correo electrónico del usuario.
-// password : Contraseña del usuario.
-// rol : Rol del usuario (por ejemplo, administrador, entrenador, etc.).
+
 }
