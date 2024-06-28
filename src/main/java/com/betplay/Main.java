@@ -32,45 +32,18 @@ public class Main {
 
             switch (choice) {
                 case 1:
-                    System.out.println(" ,------------------------------,");
-                    System.out.println(" |    Seleccione su usuario:    |");
-                    System.out.println(" |------------------------------|");
-                    System.out.println(" | 1. Administrador de la liga  |");
-                    System.out.println(" | 2. Aficionado                |");
-                    System.out.println(" | 3. Equipo técnico            |");
-                    System.out.println(" | 4. Arbitro                   |");
-                    System.out.println(" | 5. Periodista                |");
-                    System.out.println(" | 6. Médico del equipo         |");
-                    System.out.println(" | 7. Volver al menu            |");
-                    System.out.println(" '---------------------------- -'");
-                    System.out.print("Opción: ");
-
-                    int userChoice = scanner.nextInt();
+                    System.out.println(" ,-------------------------,");
+                    System.out.println(" |   Ingrese su usuario:   |");
+                    System.out.println(" '-------------------------'");
                     scanner.nextLine();
-                    switch (userChoice) {
-                        case 1 -> {
-                             // administradorlogin();
-                        }
-                        case 2 -> {
-                            // aficionadologin();
-                        }
-                        case 3 -> {
-                            // equipotecnicologin();
-                        }
-                        case 4 -> {
-                            // arbitrologin();
-                        }
-                        case 5 -> {
-                            // periodistalogin();
-                        }
-                        case 6 -> {
-                            // medicomedicologin();
-                        }
-                        case 7 -> {
-                            return;
-                        }
-                        default -> System.out.println("Opción inválida. Intente de nuevo.");
-                    }
+                    System.out.println(" ,-------------------------,");
+                    System.out.println(" |  Ingrese su contraseña: |");
+                    System.out.println(" '-------------------------'");
+                    scanner.nextLine();
+                    
+                    // validaciones mediante el uso de hash table para cada tipo de usuario 
+                    //...
+                    
                     break;
                 case 2:
                     System.out.println("Saliendo de la aplicación...");
