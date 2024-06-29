@@ -7,9 +7,13 @@ import com.betplay.model.entity.Actividad;
 
 public class ActividadView {
     private Controller controlador;
+    
 
     public ActividadView(Controller controlador) {
         this.controlador = controlador;
+    }
+
+    public ActividadView() {
     }
 
     public void start() {

@@ -2,11 +2,14 @@ package com.betplay;
 
 import java.util.Scanner;
 
+import com.betplay.model.view.ActividadView;
+
 public class Main {
     public static void main(String[] args) {
 
         // Controllers
-
+        Controller ctrlactividades = new Controller();
+        ActividadView va = new ActividadView();
         Scanner scanner = new Scanner(System.in);
 
         // Menú inicial
@@ -32,18 +35,16 @@ public class Main {
 
             switch (choice) {
                 case 1:
-                    System.out.println(" ,-------------------------,");
-                    System.out.println(" |   Ingrese su usuario:   |");
-                    System.out.println(" '-------------------------'");
-                    scanner.nextLine();
-                    System.out.println(" ,-------------------------,");
-                    System.out.println(" |  Ingrese su contraseña: |");
-                    System.out.println(" '-------------------------'");
-                    scanner.nextLine();
-                    
-                    // validaciones mediante el uso de hash table para cada tipo de usuario 
-                    //...
-                    
+
+                System.out.println(" ,-------------------------,");
+                System.out.println(" |   Ingrese su usuario:   |");
+                System.out.println(" '-------------------------'");
+                scanner.nextLine();
+                System.out.println(" ,-------------------------,");
+                System.out.println(" |  Ingrese su contraseña: |");
+                System.out.println(" '-------------------------'");
+                scanner.nextLine();
+                
                     break;
                 case 2:
                     System.out.println("Saliendo de la aplicación...");
