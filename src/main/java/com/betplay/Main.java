@@ -2,7 +2,7 @@ package com.betplay;
 
 import java.util.Scanner;
 
-import com.betplay.model.view.ActividadView;
+import com.betplay.view.ActividadView;
 
 public class Main {
     public static void main(String[] args) {
