@@ -13,6 +13,9 @@ public class ResultadoView {
         this.controlador = controlador;
     }
 
+    public ResultadoView() {
+    }
+
     public void start() {
         Scanner sc = new Scanner(System.in);
 

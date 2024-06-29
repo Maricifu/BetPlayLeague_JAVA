@@ -12,6 +12,9 @@ public class RendimientoView {
         this.controlador = controlador;
     }
 
+    public RendimientoView() {
+    }
+
     public void start() {
         Scanner sc = new Scanner(System.in);
 

@@ -12,6 +12,9 @@ public class TarjetaView {
         this.controlador = controlador;
     }
 
+    public TarjetaView() {
+    }
+
     public void start() {
         Scanner sc = new Scanner(System.in);
 

@@ -15,6 +15,10 @@ public class RolView {
         this.controlador = controlador;
     }
 
+    public RolView() {
+    }
+
+
     public void start() {
         Scanner sc = new Scanner(System.in);
 

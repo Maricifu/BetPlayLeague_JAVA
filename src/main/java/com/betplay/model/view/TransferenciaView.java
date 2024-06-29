@@ -14,6 +14,9 @@ public class TransferenciaView {
         this.controlador = controlador;
     }
 
+    public TransferenciaView() {
+    }
+
     public void start() {
         Scanner sc = new Scanner(System.in);
 

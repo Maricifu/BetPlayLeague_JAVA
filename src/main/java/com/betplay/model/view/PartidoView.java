@@ -22,6 +22,10 @@ public class PartidoView {
         this.dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     }
 
+    public PartidoView() {
+    }
+
+
     public void start() {
         Scanner sc = new Scanner(System.in);
 

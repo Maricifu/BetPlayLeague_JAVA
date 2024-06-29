@@ -12,6 +12,9 @@ public class UsuarioView {
         this.controlador = controlador;
     }
 
+    public UsuarioView() {
+    }
+
     public void start() {
         Scanner sc = new Scanner(System.in);
 

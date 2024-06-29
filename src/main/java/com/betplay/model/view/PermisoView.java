@@ -12,6 +12,9 @@ public class PermisoView {
         this.controlador = controlador;
     }
 
+    public PermisoView() {
+    }
+
     public void start() {
         Scanner sc = new Scanner(System.in);
 

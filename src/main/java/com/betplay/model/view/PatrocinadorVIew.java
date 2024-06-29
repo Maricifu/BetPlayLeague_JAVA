@@ -16,6 +16,10 @@ public class PatrocinadorVIew {
         this.dateFormat = new SimpleDateFormat("yyyy-MM-dd");
     }
 
+    public PatrocinadorVIew() {
+    }
+
+
     public void start() {
         Scanner sc = new Scanner(System.in);
 
