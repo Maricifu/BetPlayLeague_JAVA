@@ -2,14 +2,17 @@ package com.betplay.model.entity;
 
 import java.util.Date;
 
-class Patrocinador {
+public class Patrocinador {
     private int id;
     private String nombre;
     private String tipo;
     private double monto;
     private Date fechaInicio;
     private Date fechaFin;
-    
+  
+    public Patrocinador() {
+    }
+
     public Patrocinador(int id, String nombre, String tipo, double monto, Date fechaInicio, Date fechaFin) {
         this.id = id;
         this.nombre = nombre;

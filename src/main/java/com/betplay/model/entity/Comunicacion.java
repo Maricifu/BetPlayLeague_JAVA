@@ -10,6 +10,9 @@ public class Comunicacion {
     private Date fechaPublicacion;
     private List<String> destinatarios;
     
+    public Comunicacion() {
+    }
+
     public Comunicacion(int id, String titulo, String contenido, Date fechaPublicacion, List<String> destinatarios) {
         this.id = id;
         this.titulo = titulo;

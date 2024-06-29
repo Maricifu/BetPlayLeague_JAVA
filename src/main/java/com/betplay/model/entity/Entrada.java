@@ -12,6 +12,9 @@ public class Entrada {
     private double precioTotal;
     private String ubicacion;
     
+    public Entrada() {
+    }
+
     public Entrada(int id, String partido, String comprador, Date fechaCompra, int cantidad, double precioTotal, String ubicacion) {
         this.id = id;
         this.partido = partido;
