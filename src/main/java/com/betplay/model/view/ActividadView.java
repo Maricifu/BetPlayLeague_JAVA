@@ -18,7 +18,7 @@ public class ActividadView {
 
     public void start() {
         Scanner sc = new Scanner(System.in);
-        try {
+        
             while (true) {
                 System.out.println("1. Crear Actividad");
                 System.out.println("2. Actualizar Actividad");
@@ -108,8 +108,5 @@ public class ActividadView {
                         System.out.println("Opción no válida. Intente de nuevo.");
                 }
             }
-        } finally {
-            sc.close(); 
-        }
     }
 }
