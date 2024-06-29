@@ -7,13 +7,13 @@ public class Comunicacion {
     private int id;
     private String titulo;
     private String contenido;
-    private Date fechaPublicacion;
+    private String fechaPublicacion;
     private List<String> destinatarios;
     
     public Comunicacion() {
     }
 
-    public Comunicacion(int id, String titulo, String contenido, Date fechaPublicacion, List<String> destinatarios) {
+    public Comunicacion(int id, String titulo, String contenido, String fechaPublicacion, List<String> destinatarios) {
         this.id = id;
         this.titulo = titulo;
         this.contenido = contenido;
@@ -45,11 +45,11 @@ public class Comunicacion {
         this.contenido = contenido;
     }
     
-    public Date getFechaPublicacion() {
+    public String getFechaPublicacion() {
         return fechaPublicacion;
     }
     
-    public void setFechaPublicacion(Date fechaPublicacion) {
+    public void setFechaPublicacion(String fechaPublicacion) {
         this.fechaPublicacion = fechaPublicacion;
     }
     
