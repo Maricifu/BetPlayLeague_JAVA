@@ -3,24 +3,24 @@ package com.betplay.model.entity;
 import java.util.List;
 
 public class Rol {
-    private int id;
+    private String id;
     private String nombre;
-    private List<Permiso> idpermisos;
+    private List<Permiso> permisos;
     
     public Rol() {
     }
 
-    public Rol(int id, String nombre, List<Permiso> idpermisos) {
+    public Rol(String id, String nombre, List<Permiso> permisos) {
         this.id = id;
         this.nombre = nombre;
-        this.idpermisos = idpermisos;
+        this.permisos = permisos;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -33,11 +33,11 @@ public class Rol {
     }
 
     public List<Permiso> getIdpermisos() {
-        return idpermisos;
+        return permisos;
     }
 
     public void setIdpermisos(List<Permiso> idpermisos) {
-        this.idpermisos = idpermisos;
+        this.permisos = idpermisos;
     }
 
     

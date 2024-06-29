@@ -2,14 +2,14 @@ package com.betplay.model.entity;
 
 public class Usuario {
 
-    private int id;
+    private String id;
     private String nombre;
     private String email;
     private String password;
-    private int idrol;
+    private Rol idrol;
     public Usuario() {
     }
-    public Usuario(int id, String nombre, String email, String password, int idrol) {
+    public Usuario(String id, String nombre, String email, String password, Rol idrol) {
         this.id = id;
         this.nombre = nombre;
         this.email = email;
@@ -17,10 +17,10 @@ public class Usuario {
         this.idrol = idrol;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
     public String getNombre() {
@@ -41,10 +41,10 @@ public class Usuario {
     public void setPassword(String password) {
         this.password = password;
     }
-    public int getIdrol() {
+    public Rol getIdrol() {
         return idrol;
     }
-    public void setIdrol(int idrol) {
+    public void setIdrol(Rol idrol) {
         this.idrol = idrol;
     }
 
