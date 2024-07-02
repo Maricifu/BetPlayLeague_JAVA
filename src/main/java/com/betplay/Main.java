@@ -4,14 +4,9 @@ import java.util.Scanner;
 
 import com.betplay.usersView.LoginView;
 import com.betplay.usersView.UserDatabase;
-// import com.betplay.view.ActividadView;
 
 public class Main {
     public static void main(String[] args) {
-
-        // Controllers
-        // Controller ctrlactividades = new Controller();
-        // ActividadView va = new ActividadView();
 
         Scanner scanner = new Scanner(System.in);
 
@@ -39,6 +34,7 @@ public class Main {
             switch (choice) {
                 case 1:
                     UserDatabase userDatabase = new UserDatabase();
+                    userDatabase.initializeDefaultUsers(); // Inicializar usuarios predeterminados
                     LoginView loginView = new LoginView(userDatabase);
                     loginView.showLogin();
                     break;

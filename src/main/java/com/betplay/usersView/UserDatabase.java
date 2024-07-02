@@ -1,44 +1,40 @@
 package com.betplay.usersView;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collection;
-import java.util.Hashtable;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
-import com.betplay.model.entity.Permiso;
+import com.betplay.model.entity.Arbitro;
 import com.betplay.model.entity.Rol;
 import com.betplay.model.entity.Usuario;
 
 public class UserDatabase {
-    private Hashtable<String, Usuario> usuarios;
+    private Map<String, Usuario> usuarios;
     private List<Rol> roles;
-    private List<Permiso> permisos;
 
     public UserDatabase() {
-        this.usuarios = new Hashtable<>();
-        this.roles = new ArrayList<>();
-        this.permisos = new ArrayList<>();
-        initializeRolesAndPermisos();
+        this.usuarios = new HashMap<>();
+        // Inicializar roles y permisos si es necesario
     }
 
-    private void initializeRolesAndPermisos() {
-        Permiso permiso1 = new Permiso("1", "Gestionar equipos");
-        Permiso permiso2 = new Permiso("2", "Gestionar jugadores");
-        Permiso permiso3 = new Permiso("3", "Programar partidos");
+    public void initializeDefaultUsers() {
 
-        this.permisos.add(permiso1);
-        this.permisos.add(permiso2);
-        this.permisos.add(permiso3);
+        Rol adminRol = new Rol("1", "Administrador", null); 
+        Rol entrenadorRol = new Rol("2", "Entrenador", null);
+        Rol aficionadoRol = new Rol("3", "Aficionado", null);
+        Rol ArbitroRol = new Rol("4", "Árbitro", null);
 
-        List<Permiso> permisosAdmin = Arrays.asList(permiso1, permiso2, permiso3);
-        Rol rolAdmin = new Rol("1", "Administrador", permisosAdmin);
 
-        List<Permiso> permisosEntrenador = Arrays.asList(permiso1, permiso2);
-        Rol rolEntrenador = new Rol("2", "Entrenador", permisosEntrenador);
+        Usuario admin = new Usuario("1", "Admin", "admin123", "admin123", adminRol);
+        Usuario entrenador = new Usuario("2", "Entrenador", "coach123", "coach123", entrenadorRol);
+        Usuario aficionado = new Usuario("3", "Aficionado", "fan123", "fan123", aficionadoRol);
+        Usuario arbitro = new Usuario("4", "Arbitro", "arbitro123", "arbitro123", ArbitroRol);
 
-        this.roles.add(rolAdmin);
-        this.roles.add(rolEntrenador);
+        usuarios.put(admin.getId(), admin);
+        usuarios.put(entrenador.getId(), entrenador);
+        usuarios.put(aficionado.getId(), aficionado);
+        usuarios.put(arbitro.getId(),arbitro);
     }
 
     public void addUsuario(Usuario usuario) {
@@ -53,16 +49,12 @@ public class UserDatabase {
         usuarios.remove(id);
     }
 
+    public Collection<Usuario> getUsuarios() {
+        return usuarios.values();
+    }
+
     public List<Rol> getRoles() {
         return roles;
     }
 
-    public List<Permiso> getPermisos() {
-        return permisos;
-    }
-
-    public Collection<Usuario> getUsuarios() {
-        return usuarios.values();
-    }
 }
-
