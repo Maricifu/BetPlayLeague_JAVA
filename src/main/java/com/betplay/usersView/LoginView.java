@@ -1,7 +1,7 @@
 package com.betplay.usersView;
 
 import java.util.Scanner;
-import com.betplay.model.entity.Permiso;
+
 import com.betplay.model.entity.Rol;
 import com.betplay.model.entity.Usuario;
 
@@ -50,12 +50,12 @@ public class LoginView {
                 adminView.showAdminMenu();
                 break;
             case "Entrenador":
-                EquipoTecView equipoTecView = new EquipoTecView();
-                equipoTecView.showEquipoTecMenu();
+                EquipoTecnicoView equipoTecView = new EquipoTecnicoView();
+                equipoTecView.showEquipoTecnicoMenu();
                 break;
             case "Aficionado":
-                FanView fanView = new FanView();
-                fanView.showFanMenu();
+                AficionadoView fanView = new AficionadoView();
+                fanView.showAficionadoMenu();
                 break;
             case "Árbitro":
                 ArbitroView arbitroView = new ArbitroView();
@@ -66,8 +66,8 @@ public class LoginView {
                 periodistaView.showPeriodistaMenu();
                 break;
             case "Médico":
-                MedicoView medicoView = new MedicoView();
-                medicoView.showMedicoMenu();
+                MedicoEquipoView medicoView = new MedicoEquipoView();
+                medicoView.showMedicoEquipoMenu();
                 break;
             default:
                 System.out.println("Rol desconocido. No se puede redirigir.");

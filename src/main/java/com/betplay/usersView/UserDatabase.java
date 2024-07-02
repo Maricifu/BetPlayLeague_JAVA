@@ -1,6 +1,11 @@
 package com.betplay.usersView;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Hashtable;
+import java.util.List;
+
 import com.betplay.model.entity.Permiso;
 import com.betplay.model.entity.Rol;
 import com.betplay.model.entity.Usuario;
@@ -18,7 +23,6 @@ public class UserDatabase {
     }
 
     private void initializeRolesAndPermisos() {
-        // Inicializar roles y permisos de ejemplo
         Permiso permiso1 = new Permiso("1", "Gestionar equipos");
         Permiso permiso2 = new Permiso("2", "Gestionar jugadores");
         Permiso permiso3 = new Permiso("3", "Programar partidos");

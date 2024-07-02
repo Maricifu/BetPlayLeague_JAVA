@@ -4,7 +4,9 @@ import java.util.Scanner;
 
 import com.betplay.model.entity.Usuario;
 import com.betplay.view.ArbitroViewcrear;
+import com.betplay.view.ComunicacionView;
 import com.betplay.view.EntrenadorView;
+import com.betplay.view.EquipamientoView;
 import com.betplay.view.EquipoView;
 import com.betplay.view.EstadioView;
 import com.betplay.view.IncidenteView;
@@ -14,6 +16,7 @@ import com.betplay.view.MedioComunicacionView;
 import com.betplay.view.NoticiaComunicadoView;
 import com.betplay.view.PartidoView;
 import com.betplay.view.PatrocinadorVIew;
+import com.betplay.view.PremioView;
 import com.betplay.view.ResultadoView;
 import com.betplay.view.TransferenciaView;
 
@@ -190,13 +193,13 @@ public class AdminView {
     }
 
     private void manageEquipment() {
-        // Lógica para gestión de equipamiento
-        System.out.println("Gestión de Equipamiento - (Funcionalidad pendiente de implementar)");
+        EquipamientoView equipamientoview = new EquipamientoView();
+        equipamientoview.start();
     }
 
     private void manageAwards() {
-        // Lógica para gestión de premios y reconocimientos
-        System.out.println("Gestión de Premios - (Funcionalidad pendiente de implementar)");
+        PremioView premioview = new PremioView();
+        premioview.start();
     }
 
     private void manageUsers() {
@@ -318,12 +321,12 @@ public class AdminView {
     }
 
     private void manageSponsors() {
-        // Lógica para gestión de patrocinadores
-        System.out.println("Gestión de Patrocinadores - (Funcionalidad pendiente de implementar)");
+        PatrocinadorVIew patrocinadorview = new PatrocinadorVIew();
+        patrocinadorview.start();
     }
 
     private void managePublicRelations() {
-        // Lógica para gestión de relaciones públicas
-        System.out.println("Gestión de Relaciones Públicas - (Funcionalidad pendiente de implementar)");
+        ComunicacionView comunicacionview = new ComunicacionView();
+        comunicacionview.start();
     }
 }
