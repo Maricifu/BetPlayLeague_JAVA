@@ -1,9 +1,21 @@
 package com.betplay.usersView;
 
 import java.util.Scanner;
-// import com.betplay.model.entity.Permiso;
-// import com.betplay.model.entity.Rol;
+
 import com.betplay.model.entity.Usuario;
+import com.betplay.view.ArbitroViewcrear;
+import com.betplay.view.EntrenadorView;
+import com.betplay.view.EquipoView;
+import com.betplay.view.EstadioView;
+import com.betplay.view.IncidenteView;
+import com.betplay.view.InformeView;
+import com.betplay.view.JugadorView;
+import com.betplay.view.MedioComunicacionView;
+import com.betplay.view.NoticiaComunicadoView;
+import com.betplay.view.PartidoView;
+import com.betplay.view.PatrocinadorVIew;
+import com.betplay.view.ResultadoView;
+import com.betplay.view.TransferenciaView;
 
 public class AdminView {
     private Scanner scanner;
@@ -12,6 +24,9 @@ public class AdminView {
     public AdminView(UserDatabase userDatabase) {
         this.scanner = new Scanner(System.in);
         this.userDatabase = userDatabase;
+    }
+    public AdminView(){
+
     }
 
     public void showAdminMenu() {
@@ -110,68 +125,68 @@ public class AdminView {
     }
 
     private void manageTeams() {
-        // Lógica para gestión de equipos
-        System.out.println("Gestión de Equipos - (Funcionalidad pendiente de implementar)");
+        EquipoView equipoview = new EquipoView();
+        equipoview.start();
     }
 
     private void managePlayers() {
-        // Lógica para gestión de jugadores
-        System.out.println("Gestión de Jugadores - (Funcionalidad pendiente de implementar)");
+        JugadorView jugadorview = new JugadorView();
+        jugadorview.start();
     }
 
     private void scheduleMatches() {
-        // Lógica para programación de partidos
-        System.out.println("Programación de Partidos - (Funcionalidad pendiente de implementar)");
+        PartidoView partidoview = new PartidoView();
+        partidoview.start();
     }
 
     private void recordResults() {
-        // Lógica para registro de resultados
-        System.out.println("Registro de Resultados - (Funcionalidad pendiente de implementar)");
+        ResultadoView resultadoview = new ResultadoView();
+        resultadoview.start();
     }
 
     private void manageNews() {
-        // Lógica para gestión de noticias
-        System.out.println("Gestión de Noticias - (Funcionalidad pendiente de implementar)");
+        NoticiaComunicadoView noticiacomunicadoview = new NoticiaComunicadoView();
+        noticiacomunicadoview.start();
     }
 
     private void manageCoaches() {
-        // Lógica para gestión de entrenadores
-        System.out.println("Gestión de Entrenadores - (Funcionalidad pendiente de implementar)");
+        EntrenadorView entrenadorview = new EntrenadorView();
+        entrenadorview.start();
     }
 
     private void manageReferees() {
-        // Lógica para gestión de árbitros
-        System.out.println("Gestión de Árbitros - (Funcionalidad pendiente de implementar)");
+        ArbitroViewcrear arbitroview = new ArbitroViewcrear();
+        arbitroview.start();
     }
 
     private void manageStadiums() {
-        // Lógica para gestión de estadios
-        System.out.println("Gestión de Estadios - (Funcionalidad pendiente de implementar)");
+        EstadioView estadioview = new EstadioView();
+        estadioview.start();
     }
 
     private void manageSponsorships() {
-        // Lógica para gestión de patrocinios
-        System.out.println("Gestión de Patrocinios - (Funcionalidad pendiente de implementar)");
+        PatrocinadorVIew patrocinadorview = new PatrocinadorVIew();
+        patrocinadorview.start();
     }
 
     private void generateReports() {
-        // Lógica para generación de informes
-        System.out.println("Generación de Informes - (Funcionalidad pendiente de implementar)");
+        InformeView informeview = new InformeView();
+        informeview.start();
     }
 
     private void manageIncidents() {
-        // Lógica para gestión de incidentes
-        System.out.println("Gestión de Incidentes - (Funcionalidad pendiente de implementar)");
+        IncidenteView incidenteview = new IncidenteView();
+        incidenteview.start();
     }
 
     private void manageMedia() {
-        // Lógica para gestión de medios de comunicación
-        System.out.println("Gestión de Medios - (Funcionalidad pendiente de implementar)");
+        MedioComunicacionView medioscom = new MedioComunicacionView();
+        medioscom.start();
     }
 
     private void manageTransfers() {
-        // Lógica para gestión de transferencias
-        System.out.println("Gestión de Transferencias - (Funcionalidad pendiente de implementar)");
+        TransferenciaView transferenciaview = new TransferenciaView();
+        transferenciaview.start();
     }
 
     private void manageEquipment() {

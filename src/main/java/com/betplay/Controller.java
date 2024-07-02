@@ -3,6 +3,7 @@ package com.betplay;
 import java.util.Hashtable;
 
 import com.betplay.model.entity.Actividad;
+import com.betplay.model.entity.Arbitro;
 import com.betplay.model.entity.Comunicacion;
 import com.betplay.model.entity.Entrada;
 import com.betplay.model.entity.Entrenador;
@@ -11,8 +12,11 @@ import com.betplay.model.entity.Equipo;
 import com.betplay.model.entity.Estadio;
 import com.betplay.model.entity.Goles;
 import com.betplay.model.entity.Incidente;
+import com.betplay.model.entity.Informe;
 import com.betplay.model.entity.Jugador;
 import com.betplay.model.entity.Lesion;
+import com.betplay.model.entity.MedioComunicacion;
+import com.betplay.model.entity.NoticiaComunicado;
 import com.betplay.model.entity.Partido;
 import com.betplay.model.entity.Patrocinador;
 import com.betplay.model.entity.Permiso;
@@ -44,4 +48,10 @@ public class Controller {
     public static Hashtable<Integer, Patrocinador> patrocinadores = new Hashtable<>();
     public static Hashtable<Integer, Entrenador> entrenadores = new Hashtable<>();
     public static Hashtable<Integer, Estadio> estadios = new Hashtable<>();
+    public static Hashtable<Integer, NoticiaComunicado> noticias = new Hashtable<>();
+    public static Hashtable<Integer, Arbitro> arbitros = new Hashtable<>();
+    public static Hashtable<Integer, Informe> informes = new Hashtable<>();
+    public static Hashtable<Integer, MedioComunicacion> medios = new Hashtable<>();
+
+
 }

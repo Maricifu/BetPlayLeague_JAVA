@@ -51,7 +51,7 @@ public class LoginView {
                 break;
             case "Entrenador":
                 EquipoTecView equipoTecView = new EquipoTecView();
-                EquipoTecView.showEquipoTecMenu();
+                equipoTecView.showEquipoTecMenu();
                 break;
             case "Aficionado":
                 FanView fanView = new FanView();
@@ -59,15 +59,15 @@ public class LoginView {
                 break;
             case "Árbitro":
                 ArbitroView arbitroView = new ArbitroView();
-                ArbitroView.showArbitroMenu();
+                arbitroView.showArbitroMenu();
                 break;
             case "Periodista":
                 PeriodistaView periodistaView = new PeriodistaView();
-                PeriodistaView.showPeriodistaMenu();
+                periodistaView.showPeriodistaMenu();
                 break;
             case "Médico":
                 MedicoView medicoView = new MedicoView();
-                MedicoView.showMedicoMenu();
+                medicoView.showMedicoMenu();
                 break;
             default:
                 System.out.println("Rol desconocido. No se puede redirigir.");
