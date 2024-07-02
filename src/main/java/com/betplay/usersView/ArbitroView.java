@@ -17,7 +17,6 @@ public class ArbitroView {
     public ArbitroView() {
     }
 
-
     public void showArbitroMenu() {
         boolean exit = false;
 
@@ -30,16 +29,37 @@ public class ArbitroView {
             System.out.println("------------------------------");
             System.out.print("Opción: ");
 
-            int choice = scanner.nextInt();
+            int eleccion = scanner.nextInt();
             scanner.nextLine(); // Consume newline
 
-            switch (choice) {
+            switch (eleccion) {
                 case 1:
-                    registerMatchResults();
+                    ResultadoView resultadoView = new ResultadoView();
+                    resultadoView.start();
                     break;
                 case 2:
-                    manageIncidents();
-                    break;
+                    while (true) {
+                        System.out.println("\nGestión de Incidentes:");
+                        System.out.println("-------------------------------");
+                        System.out.println("| 1. Registrar Incidente      |");
+                        System.out.println("| 0. Volver al Menú Principal |");
+                        System.out.println("-------------------------------");
+                        System.out.print("Opción: ");
+            
+                        int choice = scanner.nextInt();
+                        scanner.nextLine(); 
+            
+                        switch (choice) {
+                            case 1 -> {
+                                IncidenteView incidenteView = new IncidenteView();
+                                incidenteView.start();
+                            }
+                            case 0 -> {
+                                return;
+                            }
+                            default -> System.out.println("Opción inválida. Intente de nuevo.");
+                        }
+                    }
                 case 0:
                     exit = true;
                     break;
@@ -47,42 +67,5 @@ public class ArbitroView {
                     System.out.println("Opción inválida. Intente de nuevo.");
             }
         }
-    }
-
-    private void registerMatchResults() {
-        ResultadoView resultadoView = new ResultadoView();
-        resultadoView.start();
-    }
-
-    private void manageIncidents() {
-        boolean exit = false;
-
-        while (!exit) {
-            System.out.println("\nGestión de Incidentes:");
-            System.out.println("------------------------------");
-            System.out.println("| 1. Registrar Incidente     |");
-            System.out.println("| 0. Volver al Menú Principal|");
-            System.out.println("------------------------------");
-            System.out.print("Opción: ");
-
-            int choice = scanner.nextInt();
-            scanner.nextLine(); 
-
-            switch (choice) {
-                case 1:
-                    registerIncident();
-                    break;
-                case 0:
-                    exit = true;
-                    break;
-                default:
-                    System.out.println("Opción inválida. Intente de nuevo.");
-            }
-        }
-    }
-
-    private void registerIncident() {
-        IncidenteView incidenteView = new IncidenteView();
-        incidenteView.start();
     }
 }

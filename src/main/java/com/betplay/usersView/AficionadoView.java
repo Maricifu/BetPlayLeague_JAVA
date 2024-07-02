@@ -6,7 +6,7 @@ import com.betplay.view.EntradaView;
 import com.betplay.view.PartidoView;
 
 public class AficionadoView {
-    private Scanner scanner;
+    private final Scanner scanner;
 
     public AficionadoView() {
         this.scanner = new Scanner(System.in);
@@ -28,28 +28,17 @@ public class AficionadoView {
             scanner.nextLine(); // Consume newline
 
             switch (choice) {
-                case 1:
-                    sellTickets();
-                    break;
-                case 2:
-                    viewMatchSchedule();
-                    break;
-                case 0:
-                    exit = true;
-                    break;
-                default:
-                    System.out.println("Opción inválida. Intente de nuevo.");
+                case 1 -> {
+                    EntradaView entradaView = new EntradaView();
+                    entradaView.start();
+                }
+                case 2 -> {
+                    PartidoView partidoView = new PartidoView();
+                    partidoView.start();
+                }
+                case 0 -> exit = true;
+                default -> System.out.println("Opción inválida. Intente de nuevo.");
             }
         }
-    }
-
-    private void sellTickets() {
-        EntradaView entradaView = new EntradaView();
-        entradaView.start();
-    }
-
-    private void viewMatchSchedule() {
-        PartidoView partidoView = new PartidoView();
-        partidoView.start();
     }
 }
