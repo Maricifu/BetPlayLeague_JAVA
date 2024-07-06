@@ -20,47 +20,71 @@ ligabetplay
 │   │   │           ├── controller.java
 │   │   │           ├── model
 │   │   │           │   └── entity
-│   │   │           │       ├── Equipo.java
-│   │   │           │       ├── Jugador.java
-│   │   │           │       ├── Partido.java
-│   │   │           │       ├── Goles.java
-│   │   │           │       ├── Tarjeta.java
-│   │   │           │       ├── Incidente.java
-│   │   │           │       ├── Resultado.java
-│   │   │           │       ├── Lesion.java
-│   │   │           │       ├── Rendimiento.java
-│   │   │           │       ├── Entrenamiento.java
 │   │   │           │       ├── Actividad.java
-│   │   │           │       ├── Transferencia.java
-│   │   │           │       ├── Usuario.java
-│   │   │           │       ├── Rol.java
-│   │   │           │       ├── Permiso.java
-│   │   │           │       ├── Patrocinador.java
+│   │   │           │       ├── Arbitro.java
 │   │   │           │       ├── Comunicacion.java
-│   │   │           │       ├── Persona.java
+│   │   │           │       ├── Convocatoria.java
 │   │   │           │       ├── Entrada.java
-│   │   │           │       └── Estadio.java
+│   │   │           │       ├── Entrenador.java
+│   │   │           │       ├── Entrenamiento.java
+│   │   │           │       ├── Equipamiento.java
+│   │   │           │       ├── Equipo.java
+│   │   │           │       ├── Estadio.java
+│   │   │           │       ├── Goles.java
+│   │   │           │       ├── Incidente.java
+│   │   │           │       ├── Informe.java
+│   │   │           │       ├── Jugador.java
+│   │   │           │       ├── Lesion.java
+│   │   │           │       ├── MedioComunicacion.java
+│   │   │           │       ├── NoticiaComunicado.java
+│   │   │           │       ├── Partido.java
+│   │   │           │       ├── Patrocinador.java
+│   │   │           │       ├── Permiso.java
+│   │   │           │       ├── Persona.java
+│   │   │           │       ├── Premio.java
+│   │   │           │       ├── Rendimiento.java
+│   │   │           │       ├── Resultado.java
+│   │   │           │       ├── Rol.java
+│   │   │           │       ├── Tarjeta.java
+│   │   │           │       ├── Transferencia.java
+│   │   │           │       └── Usuario.java
+│   │   │           │
+│   │   │           ├── usersView
+│   │   │           │   ├── AdminView.java
+│   │   │           │   ├── AficionadoView.java
+│   │   │           │   ├── ArbitroView.java
+│   │   │           │   ├── EquipoTecnicoView.java
+│   │   │           │   ├── LoginView.java
+│   │   │           │   ├── MedicoEquipoView.java
+│   │   │           │   ├── PeriodistaView.java
+│   │   │           │   └── UserDatabase.java
 │   │   │           │
 │   │   │           └── view
-│   │   │               ├── EquipoView.java
-│   │   │               ├── JugadorView.java
-│   │   │               ├── PartidoView.java
-│   │   │               ├── GolView.java
-│   │   │               ├── TarjetaView.java
-│   │   │               ├── IncidenteView.java
-│   │   │               ├── ResultadoView.java
-│   │   │               ├── LesionView.java
-│   │   │               ├── RendimientoView.java
-│   │   │               ├── EntrenamientoView.java
 │   │   │               ├── ActividadView.java
-│   │   │               ├── TransferenciaView.java
-│   │   │               ├── UsuarioView.java
-│   │   │               ├── RolView.java
-│   │   │               ├── PermisoView.java
-│   │   │               ├── PatrocinadorView.java
+│   │   │               ├── ArbitroView.java
 │   │   │               ├── ComunicacionView.java
+│   │   │               ├── ConvocatoriaView.java
 │   │   │               ├── EntradaView.java
-│   │   │               └── EstadioView.java
+│   │   │               ├── EntrenadorView.java
+│   │   │               ├── EntrenamientoView.java
+│   │   │               ├── EquipamientoView.java
+│   │   │               ├── EquipoView.java
+│   │   │               ├── EstadioView.java
+│   │   │               ├── GolesView.java
+│   │   │               ├── IncidenteView.java
+│   │   │               ├── InformeView.java
+│   │   │               ├── JugadorView.java
+│   │   │               ├── LesionView.java
+│   │   │               ├── MedioComunicacionView.java
+│   │   │               ├── NoticiaComunicadoView.java
+│   │   │               ├── PartidoView.java
+│   │   │               ├── PatrocinadorView.java
+│   │   │               ├── PremioView.java
+│   │   │               ├── RendimientoView.java
+│   │   │               ├── ResultadoView.java
+│   │   │               ├── TarjetaView.java
+│   │   │               └── TransferenciaView.java
+│   │   │           
 │   │   └── resources
 │   │        └── java.svg
 │   └── test
